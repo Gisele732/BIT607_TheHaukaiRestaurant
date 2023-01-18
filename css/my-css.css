@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DEE4E6;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header h1:hover{
+    font-size: 60px;
+}
+
+header h1{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+nav{
+    overflow: hidden;
+    margin: 10px;
+}
+
+nav a{
+    float:left;   
+    display: block;
+    text-align: center;   
+    padding: 14px 16px;   
+    text-decoration: none;
+    color: #968066;
+}
+
+nav a:hover{
+    color:#566C6F;
+}
+
+h1, h2, h3{
+    font-family: 'Calibri light', sans-serif;
+    color: #566C6F;
+}
+    h2{
+        font-size: 36px;
+    }
+
+    h1{
+        color:#566C6F;
+    }
+        .logo{
+            font-size: 50px;
+        }
+            .logo2{
+                font-family: Calibri, sans-serif;
+                font-size: 50%;
+                color: #968066;
+            }
+
+main{
+    padding: 20px;
+}
+
+    #main-contact, #main-hours, #main-booking{
+        display: flex;
+    }
+
+    main div{
+        padding: 5px;
+        text-align: center;
+    }
+
+        .div1{
+            width: 60%;
+            text-align: center;
+        }
+
+        .div2{
+            width:40%;
+        }
+
+        iframe{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+
+main, footer{
+    color:#566C6F;
+    font-family: calibri, sans-serif;
+}
+
+#pdf{
+    background-color: #9d9d9c;
+    color: #DEE4E6;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}  
+
+    #pdf:hover{
+        background-color: #566C6F;
+    }
+
+    .menu{
+        white-space:pre-line;
+        text-align: left;
+    }
+
+        #main-menu{
+            border: solid;
+            padding: 20px;
+            margin: 10px;
+        }
+
+    .price{
+        font-size: smaller;
+        font-weight: bold;
+        color: #BFAD9A;
+    }
+
+    #appetizers, #main, #dessert, #beverages{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BFAD9A;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        color:#DEE4E6;
+        text-shadow: 1px 1px 2px #566C6F;
+        opacity: 80%;
+    }
+        #appetizers{
+            background-image: url('../images/salmon.jpg');
+        }
+        #main{
+            background-image: url('../images/lamb.jpg');
+        }
+        #dessert{
+            background-image: url('../images/pavlova.jpg');
+        }
+        #beverages{
+            background-image: url('../images/wine.jpg');
+        }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .disclaimers{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer img{
+        width: 50px;
+        padding: 10px;
+    }
+
+@media only screen and (max-width: 600px) {
+    #main-contact, #main-hours, #main-booking{
+        display: flex;
+        flex-direction: column;
+    }
+    .div1, .div2{
+        width: 100%;
+    }
+}
